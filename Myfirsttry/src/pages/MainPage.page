@@ -1,0 +1,9 @@
+<apex:page sidebar="false" showHeader="false">
+    <apex:composition template="Basic">
+        <apex:define name="body">
+            <p>
+              This is a simple page demostrating that this text is substituted, and that a banner is created.  
+            </p>
+        </apex:define>
+    </apex:composition>
+</apex:page>

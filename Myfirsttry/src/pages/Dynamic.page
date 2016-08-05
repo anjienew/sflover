@@ -1,0 +1,20 @@
+<apex:page standardController="Invoice__c">
+   <apex:pageBlock title="{!Invoice__c.name}">
+       <apex:outputPanel id="LineItemtDetails">
+           <apex:detail subject="{!$CurrentPage.parameters.cid}"
+                        relatedList="true" title="true"/>
+       </apex:outputPanel>   
+   </apex:pageBlock>
+   
+   <apex:pageBlock title="Line Items">
+       <apex:form >
+           <apex:dataList value="{!Invoice__c.Line_Items__r}" var="item">
+               <apex:commandLink reRender="LineItemtDetails">
+                   {!item.Merchandise__r.Name}
+                   <apex:param name="cid" value="{!item.Merchandise__r.id}"/>
+               </apex:commandLink>
+           </apex:dataList>
+       </apex:form>
+   </apex:pageBlock>
+    
+</apex:page>

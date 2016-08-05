@@ -1,0 +1,19 @@
+{
+    "username": "anjienew@gmail.com", 
+    "environment": "production", 
+    "project_name": "Myfirsttry", 
+    "workspace": "C:\\Users\\AJHOME\\Desktop\\mmproject", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "FQFJD8IANH1Z8VXWIPE7A2TG2B30JK6U", 
+    "metadata_container": "1dcF0000000DPkYIAW", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

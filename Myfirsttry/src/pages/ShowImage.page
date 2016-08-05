@@ -1,0 +1,17 @@
+<apex:page standardStylesheets="false">
+    <apex:stylesheet value="{! 
+        URLFOR($Resource.vfimagetest, 'vfimagetest.css') }"/>
+    <apex:includeScript value="{! $Resource.jQuery }"/>
+    <apex:includeScript value="{! 
+        URLFOR($Resource.vfimagetest, 'vfimagetest.js') }"/>
+    
+    <div style="margin-left: auto; margin-right: auto; width: 50%">
+        <!-- Display images directly referenced in a static resource -->
+        <h3>Images</h3>
+        <p>A hidden message: 
+           <apex:image alt="cat1" title="cat1"
+                       url="{!URLFOR($Resource.vfimagetest, 'cats/kitten1.jpg')}"/> 
+         
+        </p>
+    </div>
+</apex:page>

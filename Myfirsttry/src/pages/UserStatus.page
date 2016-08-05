@@ -1,0 +1,10 @@
+<apex:page sidebar="false">
+    <apex:pageBlock title="User Status">
+        <apex:pageBlockSection columns="1">
+          
+            {!IF($User.IsActive, $User.LastName, 'Inactive')}
+        </apex:pageBlockSection>
+    
+        
+    </apex:pageBlock>
+</apex:page>
